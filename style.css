@@ -1,4 +1,4 @@
-html, body, h1 {
+html, body, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -164,8 +164,6 @@ ul.carousel-dots-list {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 auto;
     width: 33.3333%;
@@ -206,4 +204,49 @@ ul.carousel-dots-list {
     color: rgba(51, 51, 51, 0.749);
     line-height: 1.571;
     padding-top: 25px;
+}
+
+.team-background {
+    background-color: rgba(46,27,90,0.85);
+}
+
+.team-list {
+    list-style-type: none;
+    font-size: 0;
+    margin: 0;
+}
+
+.team-list__list-item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.team-list__avatar {
+    width: 221px;
+    height: 230px;
+    background-color: #fff;
+}
+
+.team-list__description {
+    margin: 0 auto;
+    padding: 20px 0 25px 0;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #7E7B92;
+    border-top: 0;
+}
+
+.team-list__name {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.team-list__occupation {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+    padding-top: 5px;
 }
