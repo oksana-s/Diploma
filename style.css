@@ -1,4 +1,4 @@
-html, body, h1, h2, h3 {
+html, body, h1 {
     margin: 0;
     padding: 0;
 }
@@ -86,7 +86,6 @@ ul.menu-list {
 
 .header-separator {
   padding: 25px 0;
-  background: url(./img/separator.png) center no-repeat;
 }
 
 .header-text {
@@ -135,7 +134,76 @@ ul.carousel-dots-list {
   display: inline-block;
 }
 
-.expertise-separator {
-    padding: 20px 0;
-    background: url(./img/separator.png) center no-repeat;
+.expertise-title {
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  color: rgb(65, 61, 75);
+}
+
+.expertise-text {
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  color: rgba(47, 45, 53, 0.749);
+}
+
+.expertise-list {
+    list-style-type: none;
+    font-size: 0;
+    margin: 0;
+    padding: 48px 330px 68px 330px;
+}
+
+.expertise-list__list-item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 33.3333%;
+    font-size: 16px;
+    padding: 40px 34px;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.expertise-list__list-item:nth-of-type(3n) {
+    border-right: 0;
+}
+
+.expertise-list__list-item:nth-of-type(4),
+.expertise-list__list-item:nth-of-type(5),
+.expertise-list__list-item:nth-of-type(6) {
+    border-bottom: 0;
+}
+
+.expertise-list__icon {
+  width:auto;
+  height: 49px;
+}
+
+.expertise-list__title {
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: rgb(65, 61, 75);
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-top: 35px;
+}
+
+.expertise-list__description {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: rgba(51, 51, 51, 0.749);
+    line-height: 1.571;
+    padding-top: 25px;
 }
