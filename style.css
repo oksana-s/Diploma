@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, p {
+html, body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -302,9 +302,13 @@ ul.carousel-dots-list {
   padding: 25px 0 69px 0;
 }
 
+.portfolio {
+  padding-bottom: 75px;
+}
+
 .portfolio-header {
   text-align: justify;
-  padding: 70px 300px;
+  padding: 70px 330px 0 330px;
 }
 
 .portfolio-header:after{
@@ -344,6 +348,33 @@ ul.carousel-dots-list {
   vertical-align: top;
 }
 
-.projects-icon {
+.projects-list {
+  padding-top: 70px;
+  font-size: 0;
+}
 
+.projects-list__list-item {
+  display: inline-block;
+  width: 16.6666%;
+  height: 200px;
+}
+
+.projects-list__list-item:nth-of-type(2n) {
+  background-color: #b6b6b6;
+}
+
+.projects-list__list-item:nth-of-type(2n+1) {
+  background-color: #acacac;
+}
+
+.projects-list__list-item:nth-of-type(4n) {
+  background-color: #a1a1a1;
+}
+
+.projects-list__list-item:nth-of-type(4n+1) {
+  background-color: #8a8a8a;
+}
+
+.portfolio-action {
+  padding-top: 70px;
 }
