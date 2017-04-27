@@ -517,10 +517,7 @@ ul.carousel-dots-list {
 
 .social-list {
     padding-top: 70px;
-}
-
-.social-list :last-child {
-    padding-right: 0 !important;
+    box-sizing: border-box;
 }
 
 .social-list__list-item {
@@ -529,18 +526,53 @@ ul.carousel-dots-list {
     vertical-align: top;
 }
 
+.social-list__list-item.youtube {
+    padding-right: 0 !important;
+}
+
 .social-wrapper {
     height: 35px;
     width: 35px;
-    background-image: url(./img/ellipse.png);
     text-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.social-list__list-item.facebook:hover .social-wrapper {
+    border: 2px solid #3b5998;
+    background-color: #3b5998;
+}
+
+.social-list__list-item.twitter:hover .social-wrapper {
+    border: 2px solid #1da1f2;
+    background-color: #1da1f2;
+}
+
+.social-list__list-item.dribbble:hover .social-wrapper {
+    border: 2px solid #D75887;
+    background-color: #D75887;
+}
+
+.social-list__list-item.instagram:hover .social-wrapper {
+    border: 2px solid #5E7FA5;
+    background-color: #5E7FA5;
+}
+
+.social-list__list-item.googleplus:hover .social-wrapper {
+    border: 2px solid #dc4e41;
+    background-color: #dc4e41;
+}
+
+.social-list__list-item.youtube:hover .social-wrapper {
+    border: 2px solid #B6302A;
+    background-color: #B6302A;
 }
 
 .social-wrapper img {
     padding-top: 10px;
 }
 
-.social-wrapper .twitter, .social-wrapper .youtube {
+.twitter img, .youtube img {
     padding-top: 12px;
 }
 
