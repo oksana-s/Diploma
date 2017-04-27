@@ -10,12 +10,12 @@ body {
 }
 
 .main-container {
-    width: 1600px;
     text-align: center;
 }
 
 .header {
     background-image: url(./img/header-background.png);
+    background-size: cover;
 }
 
 .header-all {
@@ -23,7 +23,7 @@ body {
 }
 
 .header-menu {
-    width: 940px;
+    max-width: 940px;
     position: relative;
 }
 
@@ -81,7 +81,7 @@ ul.menu-list {
 }
 
 .header-content {
-    width: 940px;
+    max-width: 940px;
     margin: 0 auto;
 }
 
@@ -174,8 +174,9 @@ ul.carousel-dots-list {
 .expertise-list {
     list-style-type: none;
     font-size: 0;
-    margin: 0;
-    padding: 48px 330px 68px 330px;
+    max-width: 940px;
+    padding: 51px 0 68px 0;
+    margin: 0 auto;
 }
 
 .expertise-list__list-item {
@@ -228,6 +229,7 @@ ul.carousel-dots-list {
 
 .team {
     background-image: url(./img/team-background.png);
+    background-size: cover;
 }
 
 .team-all {
@@ -317,7 +319,9 @@ ul.carousel-dots-list {
 
 .portfolio-header {
     text-align: justify;
-    padding: 70px 330px 0 330px;
+    padding-top: 70px;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .portfolio-header:after {
@@ -390,6 +394,7 @@ ul.carousel-dots-list {
 
 .footer {
     background-image: url(./img/footer-background.png);
+    background-size: cover;
 }
 
 .footer-background {
@@ -398,7 +403,9 @@ ul.carousel-dots-list {
 
 .footer-top {
     font-size: 0;
-    padding: 67px 330px;
+    padding: 67px 0;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .footer-top-column {
@@ -537,14 +544,11 @@ ul.carousel-dots-list {
     padding-top: 12px;
 }
 
-.portfolio-header {
-    text-align: justify;
-    padding: 70px 330px 0 330px;
-}
-
 .footer-bottom {
     text-align: justify;
-    padding: 0 330px 40px 330px;
+    padding-bottom: 40px;
+    max-width: 940px;
+    margin: 0 auto;
 }
 
 .footer-bottom:after {
