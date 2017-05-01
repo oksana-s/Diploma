@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.25;
+    min-width: 960px;
 }
 
 .main-container {
@@ -93,6 +94,15 @@ ul.menu-list {
     padding-top: 190px;
 }
 
+.header-title:after {
+    content: '';
+    border-bottom: 1px solid #66DDD0;
+    display: block;
+    width: 50px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
 .header-separator {
     padding: 25px 0;
 }
@@ -102,7 +112,7 @@ ul.menu-list {
     line-height: 1.714;
     font-weight: 100;
     font-size: 14px;
-    padding: 0 130px;
+    padding: 25px 130px 0 130px;
     margin: 0;
 }
 
@@ -110,7 +120,7 @@ ul.menu-list {
     padding-top: 53px;
 }
 
-.btn {
+.link-action {
     font-family: 'Hammersmith One', sans-serif;
     color: rgb(0, 224, 208);
     font-size: 14px;
@@ -120,6 +130,14 @@ ul.menu-list {
     border: 1px solid rgb(0, 224, 208);
     padding: 15px;
     text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.link-action:hover {
+    background-color: rgba(0, 224, 208, 0.5);
+    color: white;
 }
 
 ul.carousel-dots-list {
@@ -167,8 +185,13 @@ ul.carousel-dots-list {
     padding-top: 16px;
 }
 
-.expertise-separator {
+.expertise-text:after {
+    content: '';
+    border-bottom: 2px solid #AEADB1;
+    display: block;
+    width: 50px;
     padding-top: 18px;
+    margin: 0 auto;
 }
 
 .expertise-list {
@@ -253,8 +276,13 @@ ul.carousel-dots-list {
     word-spacing: 2px;
 }
 
-.team-separator {
+.team-text:after {
+    content: '';
+    border-bottom: 2px solid #71638D;
+    display: block;
+    width: 50px;
     padding-top: 15px;
+    margin: 0 auto;
 }
 
 .team-list {
@@ -349,7 +377,14 @@ ul.carousel-dots-list {
 }
 
 .portfolio-projects .projects-text {
+    cursor: pointer;
+    text-decoration: none;
     display: inline-block;
+    color: #000;
+}
+
+.portfolio-projects .projects-text:hover {
+    text-decoration: underline;
 }
 
 .portfolio-projects .projects-icon {
@@ -496,7 +531,7 @@ ul.carousel-dots-list {
     vertical-align: top;
 }
 
-.subscribe .btn {
+.subscribe .btn-subscribe {
     position: absolute;
     right: 0;
     background: rgba(255,255,255, 0.5) url(./img/newsletter.png) no-repeat center;
@@ -504,10 +539,11 @@ ul.carousel-dots-list {
     border-radius: 0;
     height: 45px;
     min-width: 70px;
+    cursor: pointer;
 }
 
-.subscribe .btn:hover {
-    cursor: pointer;
+.subscribe .btn-subscribe:hover {
+    background-color: rgba(255,255,255, 0.2)
 }
 
 .social-list {
@@ -517,7 +553,7 @@ ul.carousel-dots-list {
 
 .social-list__list-item {
     display: inline-block;
-    padding-right: 6px;
+    padding-right: 4px;
     vertical-align: top;
 }
 
@@ -529,37 +565,37 @@ ul.carousel-dots-list {
     height: 35px;
     width: 35px;
     text-align: center;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
 }
 
 .social-list__list-item.facebook:hover .social-wrapper {
-    border: 2px solid #3b5998;
+    border: 1px solid #3b5998;
     background-color: #3b5998;
 }
 
 .social-list__list-item.twitter:hover .social-wrapper {
-    border: 2px solid #1da1f2;
+    border: 1px solid #1da1f2;
     background-color: #1da1f2;
 }
 
 .social-list__list-item.dribbble:hover .social-wrapper {
-    border: 2px solid #D75887;
+    border: 1px solid #D75887;
     background-color: #D75887;
 }
 
 .social-list__list-item.instagram:hover .social-wrapper {
-    border: 2px solid #5E7FA5;
+    border: 1px solid #5E7FA5;
     background-color: #5E7FA5;
 }
 
 .social-list__list-item.googleplus:hover .social-wrapper {
-    border: 2px solid #dc4e41;
+    border: 1px solid #dc4e41;
     background-color: #dc4e41;
 }
 
 .social-list__list-item.youtube:hover .social-wrapper {
-    border: 2px solid #B6302A;
+    border: 1px solid #B6302A;
     background-color: #B6302A;
 }
 
@@ -603,6 +639,10 @@ ul.carousel-dots-list {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
+}
+
+.footer-nav-list__list-item a:hover{
+    color: #00e0d0;
 }
 
 .copyright {
